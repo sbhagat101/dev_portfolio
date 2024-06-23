@@ -1,6 +1,6 @@
 import './App.css';
-import HeroSection from './Sections/Hero.js';
-import Navbar from './Sections/Nav.js';
+import HeroSection from './Components/Hero/Hero.js';
+import Navbar from './Components/Nav/Nav.js';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-import "../CSS/nav.css"
+import "./nav.css"
+import resume from "../../Assets/resume.pdf"
 
 
 function Navbar() {
@@ -123,18 +124,20 @@ function Navbar() {
           </a>
          
         </div>
-        <Link
+        <a
           onClick={closeMenu}
           activeClass="navbar--active-content"
           spy={true}
           smooth={true}
           offset={-70}
           duration={500}
-          to="/resume.pdf"
           className="resume"
+          href={resume}
+          without rel="noreferrer"
+          target="blank"
         >
           Resume
-        </Link>
+        </a>
       </div>
     </nav>
   );

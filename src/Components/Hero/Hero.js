@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Typewriter from "typewriter-effect"
-import profile_pic from "../Assets/profile_pic.JPG"
-import '../CSS/hero.css'
+import profile_pic from "../../Assets/profile_pic.JPG"
+import './hero.css'
 
 export default function HeroSection() {
     return (
